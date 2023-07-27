@@ -1,0 +1,16 @@
+#include <Servo.h>
+// Servo motorفي الاعلى يوجد ملف في الاردوينو مخزنه داخلة فنكشن لتشغيل 
+int servosignal = 2;
+Servo ymservo;
+void setup()
+{
+ ymservo.attach(servosignal); 
+}
+
+void loop()
+{
+  ymservo.write(90);//هنا يتم تشغيل الموتور على الزاويه 90
+  delay(1000);//التوقف لمدة ثانيه واحده
+  ymservo.write(180);//هنا يتم تشغيل الموتور على الزاويه 180
+  delay(1000);//التوقف لمدة ثانيه واحده
+}
