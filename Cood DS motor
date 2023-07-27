@@ -1,0 +1,13 @@
+int motorcontrol = 5;
+void setup()
+{
+  pinMode(motorcontrol, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(motorcontrol, HIGH);//HIGH اذا كان الموتور 
+  delay(4000); // يتم تشغيل الموتور 4 ثواني
+  digitalWrite(motorcontrol, LOW);//LOW اذا كان الموتور
+  delay(1000); //  يتم اطفاء الموتور لمده ثانيه
+}
